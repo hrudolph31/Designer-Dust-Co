@@ -8,7 +8,7 @@ import {
   Select,
   FormControlLabel,
   Switch,
-  MenuItem
+  MenuItem,
 } from "@mui/material";
 
 export const CustomPalette = () => {
@@ -44,17 +44,18 @@ export const CustomPalette = () => {
 
   const imgSelect = (palette) => {
     if (showBack) return;
+
+    if (!selectedCell) {
+      setSelectedImg(palette);
+      return;
+    }
+
     if (!isNaN(selectedCell)) {
-      console.log(selectedCell);
       const updatedGrid = [...grid];
       updatedGrid[selectedCell] = palette;
       setGrid(updatedGrid);
       setSelectedCell(null);
       return;
-    }
-
-    if (!selectedCell) {
-      setSelectedImg(palette);
     }
   };
 
@@ -65,15 +66,15 @@ export const CustomPalette = () => {
           display: "flex",
           paddingBlock: "1.25rem",
           alignItems: "center",
-          gap: "1.5rem"
+          gap: "1.5rem",
         }}
       >
-        <FormControl sx={{ width: 300 }}>
-          <InputLabel id="palette-size-label">Palette size</InputLabel>
+        <FormControl sx={{ width: 150 }}>
+          <InputLabel id="palette-size-label">Size</InputLabel>
           <Select
             labelId="palette-size-label"
             value={gridSize}
-            label="Palette size"
+            label="Size"
             onChange={(e) => setGridSize(+e.target.value)}
           >
             <MenuItem value={16}>16</MenuItem>
@@ -93,7 +94,7 @@ export const CustomPalette = () => {
           flexDirection: "row",
           flexWrap: "nowrap",
           alignItems: "start",
-          gap: "1.5rem"
+          gap: "1.5rem",
         }}
       >
         <div
@@ -101,11 +102,15 @@ export const CustomPalette = () => {
           className={["grid", showBack ? "reverse" : ""].join(" ")}
         >
           {grid.map((item, idx) => (
-            <div
-              className={[
-                "grid-item",
-                idx === selectedCell ? "selected" : ""
-              ].join(" ")}
+            <Box
+              sx={{
+                border:
+                  idx === selectedCell
+                    ? "4px solid #f73378"
+                    : "1px solid #eaeaea",
+                zIndex: idx === selectedCell ? 100 : 1,
+              }}
+              className="grid-item"
               onClick={() => gridItemSelect(idx)}
             >
               {grid[idx] && (
@@ -117,12 +122,19 @@ export const CustomPalette = () => {
                 </>
               )}
               {!grid[idx] && <>{idx + 1}</>}
-            </div>
+            </Box>
           ))}
         </div>
         <div className="palettes">
           {palettes.map((palette, idx) => (
             <img
+              style={{
+                border:
+                  selectedImg?.name === palette.name
+                    ? "4px solid #f73378"
+                    : "none",
+                zIndex: selectedImg?.name === palette.name ? 100 : 1,
+              }}
               src={palette.img}
               alt={palette.name}
               key={palette.name}
