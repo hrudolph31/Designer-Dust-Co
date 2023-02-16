@@ -4,271 +4,315 @@ export const palettes = [
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-SdEEh2X9MuORgnHKivhQainp.png",
     active: true,
-    colors: ["Blue", "Red"] // Example for Helene
+    colors: ["Blue", "Gold"] // Example for Helene
   },
   {
     name: "Arcade Floor",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-mxJ9LGzCw9Bq2muNSYMS95H7.png",
-    active: true
+    active: true,
+    colors: ["Black", "Blacklight"]
   },
   {
     name: "Aurora Horealis",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-e9WIgRNCH71xC4_6Q-KvM8Az.png",
-    active: true
+    active: true,
+    colors: ["Green", "Rainbow"]
   },
   {
     name: "Baby Sparkles",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-Rq5CKAUyn4OPRxXsf2Bl7a0z.png",
-    active: true
+    active: true,
+    colors: ["Pink"]
   },
   {
     name: "Baked AF",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-kOSPoTSyimGHepeNPRNFxWcP.png",
-    active: true
+    active: true,
+    colors: ["Silver", "420"]
   },
   {
     name: "Bar Fly",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-23UqkKjly2RkNa_hYGKRmyCO.png",
-    active: true
+    active: true,
+    colors: ["Iridescent", "Pink", "Green"]
   },
   {
     name: "Bar Fly Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-MCH-R_O9tQDCiRr0PxDYvkMK.png",
-    active: true
+    active: true,
+    colors: ["Iridescent", "Pink", "Green", "Flakes"]
   },
   {
     name: "Bejeweled",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-Pqu7YKcViuJTsYcs8Hf_wdx3.png",
-    active: true
+    active: true,
+    colors: ["Rainbow", "Blue"]
   },
   {
     name: "Bling Bling",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-T8Rm-fNganPEAU-4HHreUHrn.png",
-    active: true
+    active: true,
+    colors: ["Gold"]
   },
   {
     name: "Bling Bling Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-DD4g-U8eZfmzjWbUaOEaE69Z.png",
-    active: true
+    active: true,
+    colors: ["Gold", "Flakes"]
   },
   {
     name: "Blue Fly Skies",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-UeOORsd5Ed1pRJnhpxMjIxln.png",
-    active: true
+    active: true,
+    colors: ["Blue"]
   },
   {
     name: "Bratty",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-Cd2e_4-69a-oye2YnwUmsCtS.png",
-    active: true
+    active: true,
+    colors: ["Blue", "Iridescent"]
   },
   {
     name: "Bubblegum Bae",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-Wd4JWkocZB_MQsB5sOyqwQd0.png",
-    active: true
+    active: true,
+    colors: ["Pink", "Blacklight"]
   },
   {
     name: "Bubblegum Bae Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-8cwKrXgddquOo5ixOyTJhfPk.png",
-    active: true
+    active: true,
+    colors: ["Pink", "Blacklight", "Flakes"]
   },
   {
     name: "Bye Bye Binary",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-rg6rnRs7qE1pdtEPm_ER3Gd6.png",
-    active: true
+    active: true,
+    colors: ["Purple", "Green"]
   },
   {
     name: "C Ur Peacock",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-0O6vwE-bdSXaZlDmW6EQN7gV.png",
-    active: true
+    active: true,
+    colors: ["Blue", "Green"]
   },
   {
     name: "C U Later",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-1gCsuAxprYFk_CzoCO6dmDnE.png",
-    active: true
+    active: true,
+    colors: ["Orange", "Copper"]
   },
   {
     name: "C U Later Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-igsvs0tsh6wrl6c22n9D_wm-.png",
-    active: true
+    active: true,
+    colors: ["Orange", "Copper", "Flakes"]
   },
   {
     name: "Call Me Big Papaya",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-F1pNm5_3bI7UJ0p2BY-UVZiw.png",
-    active: true
+    active: true,
+    colors: ["Orange"]
   },
   {
     name: "Call You Mine",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-pc07yvOrmNCI-45H4HYEf_m9.png",
-    active: true
+    active: true,
+    colors: ["Pink", "Blacklight"]
   },
   {
     name: "Carolina Bae",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-9V5JXhL9oScaV3_-rTXCP5Wx.png",
-    active: true
+    active: true,
+    colors: ["Blue", "Blacklight"]
   },
   {
     name: "Celeste and Stars",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-I3l0S1t_1ItpcJq4aqblt2wx.png",
-    active: true
+    active: true,
+    colors: ["Silver", "Iridescent"]
   },
   {
     name: "Challah Back Girl",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-RWgoVVEyimGbpOSnB-zukRho.png",
-    active: true
+    active: true,
+    colors: ["Blue", "Jewish"]
   },
   {
     name: "Champagne Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-FDo-OS_D2RXn4pvNBSVQn7Sv.png",
-    active: true
+    active: true,
+    colors: ["Gold", "Flakes"]
   },
   {
     name: "Champagne Kisses",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-SFfjQGk04CmqxJBVs1ttwFvr.png",
-    active: true
+    active: true,
+    colors: ["Gold", "Green"]
   },
   {
     name: "Cherry Cheesecake",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-Io5HmQgsAqpJB6NT9ptiZAqH.png",
-    active: true
+    active: true,
+    colors: ["Red"]
   },
   {
     name: "Chip This",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-aVdsUf5NM2JDeVi_9AZ962CV.png",
-    active: true
+    active: true,
+    colors: ["Brown"]
   },
   {
     name: "Citrus Ice",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-4IaHJD3yyICZUPm1uarmVijY.png",
-    active: true
+    active: true,
+    colors: ["Yellow"]
   },
   {
     name: "Civic Duty",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-sfTNBh-1h8RuSaXFhemkQW2C.png",
-    active: true
+    active: true,
+    colors: ["Blue", "Silver"]
   },
   {
     name: "Cloud 9",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-pMh-uNJOM_0a8Ve2Em5rCjwH.png",
-    active: true
+    active: true,
+    colors: ["White", "Iridescent"]
   },
   {
     name: "Crystal Bae",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-Ng7ZLm12QR6ihWRB9QmQfZGU.png",
-    active: true
-  },
+    active: true,
+    colors: ["Purple", "Silver"]
+   },
   {
     name: "Day Break Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-dqln3xXKWPT5nm91dgKCsLJ9.png",
-    active: true
+    active: true,
+    colors: ["Iridescent", "Blue", "Orange", "Flakes"]
   },
   {
     name: "Day Break",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-h_mIL4cXQ7OOL51Q8mcRrgIn.png",
-    active: true
+    active: true,
+    colors: ["Iridescent", "Blue", "Orange"]
   },
   {
     name: "Disco Pants",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-MSgKIUvnuzJRcWeDTTpTDDpU.png",
-    active: true
+    active: true,
+    colors: ["Pink", "Purple", "Gold"]
   },
   {
     name: "Disco Queen",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-EhYwUxrLUsFMnv5VtH9rkOkE.png",
-    active: true
+    active: true,
+    colors: ["Gold", "Iridescent"]
   },
   {
     name: "Dorothy's Red Bottoms",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-cmrtcNXKikms3WvNBMnPJJ-v.png",
-    active: true
+    active: true,
+    colors: ["Red"]
   },
   {
     name: "Dorothy's Red Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-aQybszce6KHPlx-plokwf1u-.png",
-    active: true
+    active: true,
+    colors: ["Red", "Flakes"]
   },
   {
     name: "Due Tee",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-h3MAcqxGYsYHX4tZNjBtzlWj.png",
-    active: true
+    active: true,
+    colors: ["Brown"]
   },
   {
-    name: "Electric Clementine  Flakes",
+    name: "Electric Clementine Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-J0f8T3yr3xEquA-SGYqd_23t.png",
-    active: true
+    active: true,
+    colors: ["Orange", "Blacklight", "Flakes"]
   },
   {
     name: "Electric Clementine",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-7FAc5eYJm9yU4MHbj0WwTm5Y.png",
-    active: true
+    active: true,
+    colors: ["Orange", "Blacklight"]
   },
   {
     name: "Electric Slipper Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-6k1bajyAapb9qzjx3Q3DVihd.png",
-    active: true
+    active: true,
+    colors: ["Blue", "Iridescent", "Flakes"]
   },
   {
     name: "Emerald City Skyline",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-Qz9-kU5KUPWowWM8r9L90-8X.png",
-    active: true
+    active: true,
+    colors: ["Green"]
   },
   {
     name: "Emerald City Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-IQPQDZsJssewZcoOxPiI6tkQ.png",
-    active: true
+    active: true,
+    colors: ["Green", "Flakes"]
   },
   {
     name: "Enchantress",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-un3V1mbOldTfz6OXa6zcxaSx.png",
-    active: true
+    active: true,
+    colors: ["Red", "Pink"]
   },
   {
     name: "Erase Her Flakes",
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-oPMGxwMDFALYziZrt_4_1IpW.png",
-    active: true
+    active: true,
+    colors: ["Pink", "Flakes"]
   },
   {
     name: "Face Frosting",
