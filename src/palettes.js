@@ -4,7 +4,7 @@ export const palettes = [
     img:
       "https://storage.googleapis.com/custom-product-builder/53761573040/designer-dust-co-7822476345577-SdEEh2X9MuORgnHKivhQainp.png",
     active: true,
-    active: true
+    colors: ["Blue", "Red"] // Example for Helene
   },
   {
     name: "Arcade Floor",
