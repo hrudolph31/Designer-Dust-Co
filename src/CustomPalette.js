@@ -1,4 +1,4 @@
-import { palettes } from "./palettes";
+import { palettes, colors } from "./palettes";
 import { useState, useEffect } from "react";
 import {
   Container,
@@ -9,6 +9,7 @@ import {
   FormControlLabel,
   Switch,
   MenuItem,
+  TextField,
 } from "@mui/material";
 
 export const CustomPalette = () => {
@@ -17,6 +18,9 @@ export const CustomPalette = () => {
   const [selectedImg, setSelectedImg] = useState(null);
   const [grid, setGrid] = useState(Array.from({ length: gridSize }));
   const [showBack, setShowBack] = useState(false);
+  const [filteredPalettes, setFilteredPalettes] = useState(palettes);
+  const [search, setSearch] = useState("");
+  const [filterColor, setFilterColor] = useState(null);
 
   useEffect(() => {
     if (grid.length === gridSize) return;
@@ -31,6 +35,19 @@ export const CustomPalette = () => {
     updatedGrid.length = gridSize;
     setGrid(updatedGrid);
   }, [gridSize]);
+
+  useEffect(() => {
+    if (search === "" && filterColor === null)
+      return setFilteredPalettes(palettes);
+
+    const matchedPalettes = palettes.filter((palette) => {
+      // if (color === null)return palette.name.toLowerCase().includes(search.toLowerCase());
+      if (!palette.colors) return false;
+      return palette?.colors.includes(filterColor);
+    });
+
+    setFilteredPalettes(matchedPalettes);
+  }, [search, filterColor]);
 
   const gridItemSelect = (idx) => {
     if (showBack) return;
@@ -69,6 +86,11 @@ export const CustomPalette = () => {
           gap: "1.5rem",
         }}
       >
+        <TextField
+          label="Search"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
         <FormControl sx={{ width: 150 }}>
           <InputLabel id="palette-size-label">Size</InputLabel>
           <Select
@@ -78,8 +100,8 @@ export const CustomPalette = () => {
             onChange={(e) => setGridSize(+e.target.value)}
           >
             <MenuItem value={16}>16</MenuItem>
-            <MenuItem value={20}>20</MenuItem>
             <MenuItem value={24}>24</MenuItem>
+            <MenuItem value={36}>36</MenuItem>
           </Select>
         </FormControl>
         <FormControlLabel
@@ -87,6 +109,19 @@ export const CustomPalette = () => {
           control={<Switch />}
           label="Show back view"
         />
+        <Box>
+          {colors.map((color) => (
+            <Box
+              onClick={() => setFilterColor(color)}
+              sx={{
+                height: 24,
+                width: 24,
+                borderRadius: "50%",
+                backgroundColor: color.toLowerCase() ?? "transparent",
+              }}
+            />
+          ))}
+        </Box>
       </Box>
       <Box
         sx={{
@@ -97,8 +132,20 @@ export const CustomPalette = () => {
           gap: "1.5rem",
         }}
       >
-        <div
-          style={{ position: "sticky", top: "1.5rem" }}
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: `repeat(${
+              gridSize === 16 ? 4 : gridSize === 24 ? 8 : 9
+            }, 1fr)`,
+            overflow: "hidden",
+            borderRadius: gridSize === 16 ? "150px" : 0,
+            border: "2px solid black",
+            width: "600px",
+            flexShrink: 0,
+            backdropFilter: "blur(15px)",
+            backgroundColor: "#ffffff80",
+          }}
           className={["grid", showBack ? "reverse" : ""].join(" ")}
         >
           {grid.map((item, idx) => (
@@ -124,9 +171,9 @@ export const CustomPalette = () => {
               {!grid[idx] && <>{idx + 1}</>}
             </Box>
           ))}
-        </div>
+        </Box>
         <div className="palettes">
-          {palettes.map((palette, idx) => (
+          {filteredPalettes.map((palette, idx) => (
             <img
               style={{
                 border:
